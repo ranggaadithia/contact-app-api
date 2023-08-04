@@ -6,5 +6,6 @@ mongoose.Promise = global.Promise
 const db = {}
 db.mongoose = mongoose
 db.url = dbConfig.url
+db.contacts = require('./contact')(mongoose)
 
 module.exports = db

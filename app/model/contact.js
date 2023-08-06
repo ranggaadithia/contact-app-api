@@ -5,7 +5,8 @@ module.exports = (mongoose) => {
     phone: String
   },
   
-  {timestamps: true})
+  {timestamps: true}
+  )
 
   schema.method("toJSON", function() {
     const {__v, _id, ...object} = this.toObject()
